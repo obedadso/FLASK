@@ -1,0 +1,42 @@
+<!-- index.html-->
+ {% extends "base.html" %}
+
+ {% block content %}
+     <h1>Bienvenidos a tu tienda de balones </h1>
+     <p>Esta es la pagina de inicio</p>
+    
+     <div class="d-flex flex-row gap-5">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='img/balon1.jpg') }}" alt="Logo de Balones" width="200" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Balon de Futbol</h5>
+              <p class="card-text">Generalmente es esférico y está hecho de cuero.</p>
+              <a href="#" class="btn btn-primary">Leer mas...</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='img/balon2.jpg') }}" alt="Logo de Balones" width="200" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Balon de Basket</h5>
+              <p class="card-text">Suele estar hecho de cuero o tambien de goma.</p>
+              <a href="#" class="btn btn-primary">Leer mas...</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='img/balon3.jpg') }}" alt="Logo de Balones" width="200" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Balon de Voleibol</h5>
+              <p class="card-text">Es esférico material sintetico.</p>
+              <a href="#" class="btn btn-primary">Leer mas...</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='img/balon4.jpg') }}" alt="Logo de Balones" width="200" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Balon de rugby</h5>
+              <p class="card-text">iene una forma ovalada alargada y es más grande.</p>
+              <a href="#" class="btn btn-primary">Leer mas...</a>
+            </div>
+          </div>
+     </div>
+ {% endblock %}    
