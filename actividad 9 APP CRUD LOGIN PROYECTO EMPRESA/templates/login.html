@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100 m-5">
+    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 500px;">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="">
+        </div>
+        <h2 class="text-center mb-4 "  style="color: #711D8E;">Iniciar Sesión</h2>
+        <form action="{{ url_for('login') }}" method="POST" style="padding: 10px;">
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn w-100 text-white" style="background-color: #711D8E;">Ingresar</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="{{ url_for('recuperacion') }}" class="text-decoration-none"  style="color: #711D8E;">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="text-center mt-2">
+            <p>No tienes cuenta? <a href="{{ url_for('registro') }}" class="text-decoration-none"  style="color: #711D8E;">Regístrate</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

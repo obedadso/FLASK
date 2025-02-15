@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100 m-5">
+    <div class="card p-4 shadow-lg text-center" style="width: 100%; max-width: 500px;">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="">
+        </div>
+        <h2 class="mb-4"  style="color: #711D8E;">Registro</h2>
+        <form action="{{ url_for('registro') }}" method="post">
+            <div class="mb-3 text-start">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3 text-start">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn w-100 text-white" style="background-color: #711D8E;">Registrarse</button>
+        </form>
+        <div class="text-center mt-3">
+            <p>¿Ya tienes una cuenta? <a href="{{ url_for('login') }}" class="text-decoration-none"  style="color: #711D8E;">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

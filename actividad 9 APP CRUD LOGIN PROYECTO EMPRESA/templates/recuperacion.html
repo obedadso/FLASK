@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+{% block title %}Recuperar Contraseña{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow-lg text-center" style="width: 100%; max-width: 500px;">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="">
+        </div>
+        <h2 class="mb-3"  style="color: #711D8E;">Recuperar Contraseña</h2>
+        <p class="text-muted">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+
+        <form action="{{ url_for('recuperacion') }}" method="post">
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <button type="submit" class="btn w-100 text-white" style="background-color: #711D8E;">Enviar enlace</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <p><a href="{{ url_for('login') }}" class="text-decoration-none"  style="color: #711D8E;">Volver al inicio de sesión</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% endblock %}
