@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% set ocultar_nav = True %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow-lg text-center" style="width: 100%; max-width: 400px; position: relative;">
+
+        <!-- Botón para volver al inicio en el lado izquierdo con una flecha -->
+        <div class="boton-v position-absolute" style="top: 10px; left: 10px;">
+            <a href="{{ url_for('index') }}" class="btn text-white" style="background-color: #6A1B9A; padding: 5px 8px; border-radius: 50%;">
+                <i class="fas fa-arrow-left"></i> <!-- Flecha -->
+            </a>
+        </div>
+
+        <!-- Logo -->
+        <div class="mb-3">
+            <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Logo de Laika" style="width: 100px;">
+        </div>
+
+        <h2 style="color: #6A1B9A;">Iniciar Sesión</h2>
+
+        <!-- Formulario -->
+        <form action="{{ url_for('login') }}" method="POST">
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label"></label>
+                <input type="email" placeholder="Correo electrónico" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="password" class="form-label"></label>
+                <input type="password" placeholder="Contraseña" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn w-100 text-white" style="background-color: #6A1B9A;">Ingresar</button>
+        </form>
+
+        <!-- Opciones con círculos -->
+        <div class="mt-3 text-start d-flex justify-content-center gap-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rol" id="cliente" value="cliente" required style="accent-color: #6A1B9A;">
+                <label class="form-check-label" for="cliente">Cliente</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rol" id="admin" value="admin" required style="accent-color: #6A1B9A;">
+                <label class="form-check-label" for="admin">Administrador</label>
+            </div>
+        </div>
+
+        <!-- Enlaces de recuperación y registro -->
+        <div class="mt-3">
+            <a href="{{ url_for('recuperacion') }}" class="text-decoration-none" style="color: #6A1B9A;">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="mt-2">
+            <p>No tienes cuenta? <a href="{{ url_for('registro') }}" class="text-decoration-none" style="color: #6A1B9A;">Regístrate</a></p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
