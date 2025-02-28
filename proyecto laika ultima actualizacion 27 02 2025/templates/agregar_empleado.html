@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-center">Añadir Nuevo Empleado</h2>
+
+    <form action="" method="POST" class="mt-4">
+        <div class="mb-3">
+            <label class="form-label">Nombre:</label>
+            <input type="text" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Correo:</label>
+            <input type="email" name="correo" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Cargo:</label>
+            <input type="text" name="cargo" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </form>
+</div>
+{% endblock %}

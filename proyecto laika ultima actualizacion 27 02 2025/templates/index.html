@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Carrusel de imágenes de Bootstrap -->
+<div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='img/carruselperrogato.jpg') }}" class="d-block w-100" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/carruselgato2.jpg') }}" class="d-block w-100" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/carruselperro1.jpg') }}" class="d-block w-100" alt="Imagen 3">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/carruselgato.jpg') }}" class="d-block w-100" alt="Imagen 4">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/carruselperro2.jpg') }}" class="d-block w-100" alt="Imagen 5">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Información sobre la empresa Laika -->
+<div class="container mt-5">
+    <h2 class="text-center" style="color: #6A1B9A;">Laika Universo Peludo</h2>
+    <p class="text-center lead" style=" color: #6A1B9A; font-size: 1.2rem;">
+      Laika es la tienda online más completa para mascotas creada por pet lovers para pet lovers! Somos la tienda en línea de mascotas con mayor variedad de productos y servicios a domicilio en Colombia.
+      Para Laika, la salud y bienestar de tu mascota es lo más importante. Nos esforzamos día a día por dar la mejor experiencia y servicio a los pet lovers y para que a tus peluditos no les falte nada para su cuidado y salud.
+    </p>
+</div>
+
+
+
+{% endblock %}

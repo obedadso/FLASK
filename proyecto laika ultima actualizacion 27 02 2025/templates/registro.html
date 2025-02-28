@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% set ocultar_nav = True %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow-lg text-center" style="width: 100%; max-width: 400px;">
+
+        <!-- Logo -->
+        <div class="mb-3">
+            <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Logo de Laika" style="width: 100px;">
+        </div>
+
+        <h2 style="color: #6A1B9A;">Registro</h2>
+
+        <!-- Formulario -->
+        <form action="{{ url_for('register_post') }}" method="post">
+            <div class="mb-3 text-start">
+                <label for="nombre" class="form-label"></label>
+                <input type="text"placeholder="Nombre"  class="form-control" id="nombre" name="nombre" required autocomplete="name">
+            </div>
+
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label"></label>
+                <input type="email"placeholder="Correo Electrónico"  class="form-control" id="correo" name="correo" required autocomplete="email">
+            </div>
+
+            <div class="mb-3 text-start">
+                <label for="password" class="form-label"></label>
+                <input type="password"placeholder="Contraseña"  class="form-control" id="contraseña" name="contraseña" required autocomplete="new-password">
+            </div>
+
+            <button type="submit" class="btn w-100 text-white" style="background-color: #6A1B9A;">Registrarse</button>
+        </form>
+
+        <!-- Enlace de regreso al login -->
+        <div class="mt-3">
+            <p>¿Ya tienes una cuenta? <a href="{{ url_for('login') }}" class="text-decoration-none" style="color: #6A1B9A;">Inicia sesión aquí</a></p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
