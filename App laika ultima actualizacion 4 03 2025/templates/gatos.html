@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Comida para Gatos -->
+<div class="container mt-5">
+    <h1 class="text-center" style="color: #6A1B9A;">Comida para Gatos</h1>
+    <div class="row mt-4">
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato1.jpg') }}" class="card-img-top" alt="Comida para gatos 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hill Science Diet</h5>
+                    <p class="card-text"><strong>$28,500</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato4.jpg') }}" class="card-img-top" alt="Comida para gatos 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pro Plan Gato urinario</h5>
+                    <p class="card-text"><strong>$27,700</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato3.jpg') }}" class="card-img-top" alt="Comida para gatos 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Purina Pro Plan cat skin</h5>
+                    <p class="card-text"><strong>$25,900</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Producto 4 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato5.jpg') }}" class="card-img-top" alt="Comida para gatos 4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hill Science Indoor</h5>
+                    <p class="card-text"><strong>$29,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato6.jpg') }}" class="card-img-top" alt="Comida para gatos 5">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hill Science Light</h5>
+                    <p class="card-text"><strong>$26,600</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6-->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato2.jpg') }}" class="card-img-top" alt="Comida para gatos 6">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hill Science Adult</h5>
+                    <p class="card-text"><strong>$23,700</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Producto 7 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato8.jpg') }}" class="card-img-top" alt="Comida para gatos 7">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Equilibrio Castrados</h5>
+                    <p class="card-text"><strong>$30,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato9.jpg') }}" class="card-img-top" alt="Comida para gatos 8">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Equilibrio Salmao</h5>
+                    <p class="card-text"><strong>$32,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gato7.jpg') }}" class="card-img-top" alt="Comida para gatos 9">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Equilibrio Hamball</h5>
+                    <p class="card-text"><strong>$39,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,49 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.boton.v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Puedes ajustar la distancia inferior */
+    width: 100%;
+}
+
+.boton.v a {
+    background-color: transparent;
+    border: 2px solid white;
+    color: #6A1B9A;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton.v a:hover {
+    background-color: #6A1B9A;
+    color: white;
+}
+
+footer a {
+    text-decoration: none; 
+    display: inline-block;
+}
+
+/* boton de empelados */
+
+.btn-morado {
+    background-color: #6A1B9A;
+    color: white;
+}
+
+.btn-morado:hover {
+    background-color: #4A0D6A;
+    color: white;
+}
+
+

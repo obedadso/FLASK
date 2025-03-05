@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Sección de Categorías -->
+<div class="container mt-5">
+    <h3 class="text-center" style="color: #6A1B9A;">Categorías</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/perroimg3.jpg') }}" class="card-img-top" alt="Perros">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #6A1B9A;">Perros</h5>
+                    <a href="{{ url_for('perros') }}" class="btn text-white mt-2" style="background-color: #6A1B9A;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/gatoimg1.png') }}" class="card-img-top" alt="Gatos">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #6A1B9A;">Gatos</h5>
+                    <a href="{{ url_for('gatos') }}" class="btn text-white mt-2" style="background-color: #6A1B9A;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/accesorios.png') }}" class="card-img-top" alt="Accesorios">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #6A1B9A;">Accesorios</h5>
+                    <a href="{{ url_for('accesorios') }}" class="btn text-white mt-2" style="background-color: #6A1B9A;">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sección de Categorías -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/juguetes.png') }}" class="card-img-top" alt="Juguetes">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #6A1B9A;">Juguetes</h5>
+                    <a href="{{ url_for('juguetes') }}" class="btn text-white mt-2" style="background-color: #6A1B9A;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snacks.png') }}" class="card-img-top" alt="Snacks">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #6A1B9A;">snacks</h5>
+                    <a href="{{ url_for('snacks') }}" class="btn text-white mt-2" style="background-color: #6A1B9A;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Comida para Perros -->
+<div class="container mt-5">
+    <h1 class="text-center" style="color: #6A1B9A;">Snacks</h1>
+    <div class="row mt-4">
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack1.jpg') }}" class="card-img-top" alt="snack-1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dog Chow Adultos</h5>
+                    <p class="card-text"><strong>$56,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack4.jpg') }}" class="card-img-top" alt="snack-2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hills Science Diet Adulto</h5>
+                    <p class="card-text"><strong>$63,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack11.jpg') }}" class="card-img-top" alt="snack-3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hills Razas Pequeñas</h5>
+                    <p class="card-text"><strong>$60,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Producto 4 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack5.jpg') }}" class="card-img-top" alt="snack-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Besties Adultos</h5>
+                    <p class="card-text"><strong>$33,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack6.jpg') }}" class="card-img-top" alt="snack-5">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Guaumor Nutrición</h5>
+                    <p class="card-text"><strong>$27,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack10.jpg') }}" class="card-img-top" alt="snack-6">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kody Cachorros</h5>
+                    <p class="card-text"><strong>$30,000</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Producto 7 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack7.jpg') }}" class="card-img-top" alt="snack-7">
+                <div class="card-body text-center">
+                    <h5 class="card-title">WholeBarf Adultos</h5>
+                    <p class="card-text"><strong>$39,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack2.jpg') }}" class="card-img-top" alt="snack-8">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pedigree Razas Pequeñas</h5>
+                    <p class="card-text"><strong>$24,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='img/snack8.jpg') }}" class="card-img-top" alt="snack-9">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Maxvita Peludos</h5>
+                    <p class="card-text"><strong>$19,990</strong></p>
+                    <a href="#" class="btn text-white" style="background-color: #6A1B9A;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
